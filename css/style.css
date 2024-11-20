@@ -535,6 +535,21 @@ h6,
         width:85%;
         margin:0 auto;
     }
+    .sizereduce{
+        font-size: 17px;
+    }
+    .ichange{
+        font-size: 21px;
+    }
+    .ich{
+            font-size: 23px;
+    }
+    .blog-box1{
+        width:65%;
+        height:5%;
+        margin:0 auto;
+    }
+ 
 }
 @media(min-width:1000px){
     .abouts{
