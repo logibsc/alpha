@@ -141,7 +141,7 @@ h6,
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: #FFFFFF;
+    color: #cf0e0e;
     font-size: 18px;
     font-weight: 600;
     outline: none;
@@ -159,7 +159,7 @@ h6,
 }
 
 .navbar-dark .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #e60909;
 }
 
 .navbar-dark .navbar-toggler {
@@ -249,7 +249,9 @@ h6,
     .teachingimage{
         display:none;
     }
-   
+    .hide-on-mobile {
+        display: none;
+    }
 
     .carousel-caption h1 {
         font-size: 25px;
@@ -600,3 +602,33 @@ h6,
         margin-bottom: -75px;
     }
 }
+
+/* Reduce carousel image size for desktop */
+@media (min-width: 1024px) {
+    #header-carousel {
+        height: 500px; /* Reduce the overall height */
+    }
+    #header-carousel .carousel-item img {
+        height: 500px; /* Match the carousel height */
+        object-fit: cover; /* Ensure the image scales properly */
+        width: 100%; /* Keep the full width */
+    }
+
+    /* Position alphaesAI text inside the body */
+    .carousel-caption {
+        position: absolute;
+        top: 50%; /* Adjust this percentage to move text vertically */
+        transform: translateY(-50%);
+        text-align: center; /* Center text horizontally */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem; /* Adjust font size for subtitle */
+        margin-bottom: 0.5rem; /* Space below the text */
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Adjust font size for the main heading */
+    }
+}
+
