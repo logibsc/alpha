@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
+    --primary: #da2606;
     --secondary: #34AD54;
-    --light: #EEF9FF;
-    --dark: #091E3E;
+    --light: #ce895b;
+    --dark: #3e0909;
 }
 
 body {
@@ -322,18 +322,44 @@ h6,
     -webkit-animation: section-title-run-sm 5s infinite linear;
     animation: section-title-run-sm 5s infinite linear;
 }
+/* Standard Keyframes */
+@keyframes section-title-run {
+    0% { left: 0; }
+    50% { left: 145px; }
+    100% { left: 0; }
+}
 
+@keyframes section-title-run-center {
+    0% { left: 50%; margin-left: -75px; }
+    50% { left: 50%; margin-left: 45px; }
+    100% { left: 50%; margin-left: -75px; }
+}
+
+@keyframes section-title-run-sm {
+    0% { left: 0; }
+    50% { left: 85px; }
+    100% { left: 0; }
+}
+
+/* Optional for Webkit-Specific Support (Older Browsers) */
 @-webkit-keyframes section-title-run {
-    0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
+    0% { left: 0; }
+    50% { left: 145px; }
+    100% { left: 0; }
 }
 
 @-webkit-keyframes section-title-run-center {
-    0% { left: 50%; margin-left: -75px; } 50% { left : 50%; margin-left: 45px; } 100% { left: 50%; margin-left: -75px; }
+    0% { left: 50%; margin-left: -75px; }
+    50% { left: 50%; margin-left: 45px; }
+    100% { left: 50%; margin-left: -75px; }
 }
 
 @-webkit-keyframes section-title-run-sm {
-    0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+    0% { left: 0; }
+    50% { left: 85px; }
+    100% { left: 0; }
 }
+
 
 
 /*** Service ***/
